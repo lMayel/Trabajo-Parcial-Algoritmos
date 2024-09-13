@@ -1,5 +1,21 @@
+# Directorios y archivos generados por Visual Studio
 .vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
+# Directorios y archivos de compilación
+bin/
+obj/
+x64/
+
+# Archivos temporales de compilación
+*.log
+*.tmp
+*.swp
+
+# Archivos de paquetes de NuGet
+*.nupkg
+*.snupkg
+*.nupkg.metadata
