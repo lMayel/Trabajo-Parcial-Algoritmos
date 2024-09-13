@@ -23,20 +23,5 @@
     <ClInclude Include="Settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Juego.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Personaje.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Recurso.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemigo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mapa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

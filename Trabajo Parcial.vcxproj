@@ -114,11 +114,6 @@
     <ClCompile Include="src\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Enemigo.h" />
-    <ClInclude Include="Juego.h" />
-    <ClInclude Include="Mapa.h" />
-    <ClInclude Include="Personaje.h" />
-    <ClInclude Include="Recurso.h" />
     <ClInclude Include="Settings.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
