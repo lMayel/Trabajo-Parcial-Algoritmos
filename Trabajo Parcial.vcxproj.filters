@@ -20,7 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Settings.h">
+    <ClInclude Include="Headers\Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Interfaz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Animaciones.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
