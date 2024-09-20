@@ -5,7 +5,7 @@
 
 int main() {
 	//main_menu();
-	Mapa mapa(100, 20); 
+	Mapa mapa(120, 40); 
 	mapa.dibujarLimites(); // Dibuja el mapa en la consola
 	system("pause>0");
 	return 0;
