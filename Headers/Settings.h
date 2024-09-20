@@ -3,10 +3,12 @@
 #include <vector>
 #include <conio.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string>
 #include <algorithm>
 #include <thread>
 #include <chrono>
+#include <windows.h>
 
 using namespace System;
 using Milliseconds = std::chrono::milliseconds;
@@ -14,8 +16,14 @@ using Milliseconds = std::chrono::milliseconds;
 using std::string;
 
 //Tamaño del mapa
-constexpr int ALTO_MAPA { 20 };
-constexpr int ANCHO_MAPA { 20 };
+//constexpr int ALTO_MAPA { 100 };
+//constexpr int ANCHO_MAPA { 100 };
+
+// Caracteres de movimiento del jugador
+constexpr int ARRIBA { 72 };
+constexpr int IZQUIERDA{  75 };
+constexpr int DERECHA { 77 };
+constexpr int ABAJO { 80 };
 
 //Función reemplazo de _sleep() para hacer pausas:
 void pause(int milliseconds) {
@@ -23,9 +31,23 @@ void pause(int milliseconds) {
 }
 
 
-// Función posición
+// Función posición 
 void cursor(int x, int y) {
-	Console::SetCursorPosition(x, y);
+
+    HANDLE hCon;
+    hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD dwPos;
+    dwPos.X = x;
+    dwPos.Y = y;
+
+    SetConsoleCursorPosition(hCon, dwPos);
+}
+
+// Ocultar cursor en la consola
+void ocultarCursor() {
+
+    Console::CursorVisible = false;
+
 }
 
 // Función para cambiar el color del texto
